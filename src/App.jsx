@@ -1,7 +1,7 @@
 import { Link, Navigate, Route, Routes } from "react-router";
 import About from "./About";
 import Home from "./Home";
-import Navbar from "./Navbar";
+import Navigation from "./Navbar";
 import Login from "./User";
 import PageNotFound from "./PageNotFound";
 import College from "./College";
@@ -10,17 +10,34 @@ import Student from "./Student";
 import Details from "./Details";
 import UserList from "./UserList";
 import UserDetail from "./UserDetail";
+import State from "./State";
+import Parent from "./Props/Parent";
+import Controlled from "./Props/Controlled";
+import JsXml from "./JSX/JxXml";
+import JxMap from "./JSX/JxMap";
+import Clock from "./Props/Clock";
+import UseEff from "./Hooks/UseEff";
 
 function app() {
   return (
     <div>
-      <Navbar />
+      <Navigation />
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<h1>Contact</h1>}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/jxXml" element={<JsXml />}></Route>
+        <Route path="/JxMap" element={<JxMap />}></Route>
+        <Route path="/clock" element={<Clock />}></Route>
+        <Route path="/hooks" element={<UseEff />}></Route>
+
+        <Route path="/state" element={<State />}></Route>
+
+        <Route path="/props" element={<Parent />}></Route>
+
+        <Route path="/controlled" element={<Controlled />}></Route>
 
         <Route path="/college" element={<College />}>
           <Route path="student" element={<Student />} />
