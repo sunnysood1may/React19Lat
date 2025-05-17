@@ -17,6 +17,8 @@ import JsXml from "./JSX/JxXml";
 import JxMap from "./JSX/JxMap";
 import Clock from "./Props/Clock";
 import UseEff from "./Hooks/UseEff";
+import Uncontrolled from "./Props/Uncontrolled";
+import PassFunc from "./Props/PassFunc";
 
 function app() {
   return (
@@ -38,6 +40,8 @@ function app() {
         <Route path="/props" element={<Parent />}></Route>
 
         <Route path="/controlled" element={<Controlled />}></Route>
+        <Route path="/uncontrolled" element={<Uncontrolled />}></Route>
+        <Route path="/PassFunction" element={<PassFunc />}></Route>
 
         <Route path="/college" element={<College />}>
           <Route path="student" element={<Student />} />

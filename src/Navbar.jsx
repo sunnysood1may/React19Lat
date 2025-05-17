@@ -46,6 +46,12 @@ function Navigation() {
           <Nav.Link as={Link} className="link" to="/controlled">
             Controlled
           </Nav.Link>
+          <Nav.Link as={Link} className="link" to="/uncontrolled">
+            UnControlled
+          </Nav.Link>
+          <Nav.Link as={Link} className="link" to="/PassFunction">
+            PassFunction
+          </Nav.Link>
 
           <Nav.Link as={Link} className="link" to="/college">
             College
